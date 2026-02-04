@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Google Sans", sans-serif;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf2ff;
+}
+.summary-results {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 20px 30px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .summary-results {
+    flex-direction: column;
+    width: 100%;
+    overflow: visible;
+    border-radius: 0px;
+  }
+
+  .results,
+  .summary {
+    min-width: 100%;
+  }
+  .results {
+    border-radius: 0 0 20px 20px !important;
+  }
+}
+.results {
+  max-width: 50%;
+  background: linear-gradient(#7755ff, #2e2be9);
+  color: white;
+  padding: 45px 20px;
+  border-radius: 20px;
+}
+.results > div {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+.results h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.results .rate {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(#4d21c9, #2521c900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results .rate h2 {
+  font-size: 60px;
+}
+.results h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.results h1,
+p,
+.results span {
+  color: rgba(255, 255, 255, 0.707);
+}
+.results p {
+  width: 73%;
+  margin: auto;
+  text-align: center;
+  font-size: 26px;
+}
+.summary {
+  min-width: 50%;
+  padding: 45px 20px;
+  background-color: white;
+  color: #303b59;
+}
+.summary .sum-statist {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+.summary .statist {
+  display: flex;
+  gap: 10px;
+}
+.sum-statist h5 {
+  font-size: 18px;
+}
+.sum-statist h5 span {
+  color: #303b59a3;
+}
+.reaction {
+  background-color: rgba(255, 85, 85, 0.05);
+}
+.reaction h4 {
+  color: rgba(255, 85, 85);
+  font-size: 18px;
+}
+.memory {
+  background-color: rgba(255, 178, 30, 0.05);
+}
+.memory h4 {
+  color: rgba(255, 178, 30);
+  font-size: 18px;
+}
+.verbal {
+  background-color: rgba(0, 187, 143, 0.05);
+}
+.verbal h4 {
+  color: rgba(0, 187, 143);
+  font-size: 18px;
+}
+.visual {
+  background-color: rgba(17, 37, 214, 0.05);
+}
+.visual h4 {
+  color: rgba(17, 37, 214);
+  font-size: 20px;
+}
+.summary button {
+  background-color: #303b59;
+  color: white;
+  border-radius: 40px;
+  padding: 20px;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+.summary button:hover {
+  background: linear-gradient(#7755ff, #2e2be9);
+}
